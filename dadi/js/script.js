@@ -7,16 +7,14 @@ const resultMessage = document.getElementById('result-message');
 // 1. al click di un bottone
 rollBtn.addEventListener('click', function() {
 
-    // 2.generare per l'utente un numero da 1 a 6 e stamparlo in pagina
+    // 2.generare per l'utente un numero da 1 a 6
     const userNum = Math.floor( (Math.random() * 5) + 1 );
     //console.log(userNum);
-    userNumOutput.innerText = userNum;
 
-    // 3. generare numero random da 1 a 6 e stamparlo in pagina
+    // 3. generare numero random da 1 a 6
     const pcNum = Math.floor( (Math.random() * 5) + 1 );
-    pcNumOutput.innerText = pcNum;
 
-    // 4. creare un messaggio vuoto
+    // 4. creare un messaggio
     let message = `parità!
                     hanno vinto tutti
                     o 
@@ -37,7 +35,9 @@ rollBtn.addEventListener('click', function() {
 
     }
 
-    // 8. stampare il messaggio
+    // 8. stampare in pagina
+    userNumOutput.innerText = userNum;
+    pcNumOutput.innerText = pcNum;
     resultMessage.innerText = message;
-    
+
 })
