@@ -16,6 +16,7 @@ rollBtn.addEventListener('click', function() {
 
     // 4. creare un messaggio
     let message = `parità!
+    
                     hanno vinto tutti
                     o 
                     non ha vinto nessuno?
@@ -27,7 +28,7 @@ rollBtn.addEventListener('click', function() {
         // messaggio: ha vinto l'utente
         message = 'Hai vinto!!';
     
-        // 7. se il numero dell'utente è minore del numero random
+    // 7. se il numero dell'utente è minore del numero random
     } else if (userNum < pcNum) {
 
         // messaggio: ha vinto il computer
