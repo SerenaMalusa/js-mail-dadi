@@ -23,12 +23,25 @@
 
         <h1>Welcome</h1>
 
-        <form class="mx-5">
-            <label for="email-input" class="form-label mt-5">Inserisci la tua mail</label>
-            <input id="email-input" class="form-control mt-3" type="text" placeholder="example@email.com">
+        <div class="row">
 
-            <button id="sendButton" class="btn btn-primary mt-3" type="button">Invia</button>
-        </form>
+            <form class="col-5 mx-5">
+                <label for="login-input" class="form-label mt-5">Login</label>
+                <input id="login-input" class="form-control mt-3" type="text" placeholder="Inserisci la tua mail">
+    
+                <button id="login-button" class="btn btn-primary mt-3" type="button">Login</button>
+            </form>
+
+            <form class="col-5 mx-5">
+                <label for="register-input" class="form-label mt-5">Registrazione</label>
+                <input id="register-input" class="form-control mt-3" type="text" placeholder="Inserisci la tua mail">
+    
+                <button id="register-button" class="btn btn-primary mt-3" type="button">Registrati</button>
+            </form>
+
+        </div>
+
+        <h2 class="h1 mt-5" id="log-message"></h2>
         
         <!-- JAVASCRIPT -->
         <!-- my script -->
